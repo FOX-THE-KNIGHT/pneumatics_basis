@@ -24,6 +24,8 @@
 #define AIR_SPEED 344
 //Плотность воздуха
 #define AIR_VELOCITY 1.204
+//Коэффициент сопротивления входа в линию
+#define INPUTLINE_RESISTENT_COEFFICIENT 0.5
 
 //Util constants
 #define GET_FLOW_CHECK_CONSTANT 0.528
