@@ -13,6 +13,7 @@
  */
 #include <stdlib.h>
 #include <math.h>
+#include <malloc.h>
 
 /*
  * Application specific headers required by the following declarations
@@ -27,5 +28,5 @@ double utils_summ_double(double *array, unsigned int length);
 
 //Summ methods for extended types
 int utils_summ_e_int(E_ARR_INT e_array);
-
+int utils_summ_e_float(E_ARR_FLOAT e_array);
 #endif //UTILS_H_

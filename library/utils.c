@@ -39,3 +39,13 @@ int utils_summ_e_int(E_ARR_INT e_array)
     
   return final;
 }
+
+int utils_summ_e_float(E_ARR_FLOAT e_array)
+{
+  float final = .0f;
+  
+  for(int i = 0; i < e_array.length; i++)
+    final += *(e_array.array + i);
+    
+  return final;
+}

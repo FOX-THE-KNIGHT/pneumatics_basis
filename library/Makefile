@@ -13,7 +13,7 @@ DEFS = -DDEBUG_FLAG -DEXPERIMENTAL=0
 BIN = tester
 
 # Object files from which $BIN depends
-OBJS = utils.o
+OBJS = utils.o basis.o
 
 # This default rule compiles the executable program
 $(BIN): $(OBJS) $(BIN).c
@@ -31,4 +31,5 @@ depend:
 # DO NOT DELETE
 
 utils.o: etypes.h
-tester.o: utils.h etypes.h
+tester.o: utils.h etypes.h basis.h
+basis.o: utils.h
